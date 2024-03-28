@@ -1,4 +1,6 @@
 {
+    "name": "rdurica/api_example",
+    "description": "Api example using symfony and api platform",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",

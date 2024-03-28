@@ -4,7 +4,7 @@ services:
   app:
     build:
       dockerfile: build/dev/Dockerfile
-    container_name: api_playground
+    container_name: api_test
     ports:
       - 443:443
     volumes:

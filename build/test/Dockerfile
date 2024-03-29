@@ -1,4 +1,4 @@
-FROM php:8.2-apache
+FROM php:8.3-apache
 
 ENV TZ=Europe/Prague
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
@@ -24,7 +24,7 @@ COPY build/test/php.ini /usr/local/etc/php/php.ini
 
 WORKDIR /app/src
 
-RUN mkdir log && mkdir temp && mkdir temp/cache && chmod 777 log && chmod -R 777 temp
+RUN chmod -R 777 src/var/
 
 # Aliases
 RUN echo 'alias ll="ls -lah"' >> ~/.bashrc

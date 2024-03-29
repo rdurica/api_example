@@ -24,8 +24,6 @@ COPY build/test/php.ini /usr/local/etc/php/php.ini
 
 WORKDIR /app/src
 
-RUN chmod -R 777 src/var/
-
 # Aliases
 RUN echo 'alias ll="ls -lah"' >> ~/.bashrc
 RUN echo 'alias c="composer"' >> ~/.bashrc
